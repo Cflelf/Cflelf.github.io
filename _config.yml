@@ -4,12 +4,12 @@
 # ---------------------------------------------------------------
 
 # Site
-title: NexT
-subtitle:
-description:
-author: John Doe
+title: XiaorAx's Blog
+subtitle: 
+description: 每天进步一点
+author: XiaorAx
 # Support language: de, en, fr-FR, id, ja, ko, pt-BR, pt, ru, zh-Hans, zh-hk, zh-tw
-language: en
+language: zh-Hans
 date_format: '%Y-%m-%d'
 
 # URL
@@ -151,7 +151,7 @@ menu_icons:
 
 # Schemes
 scheme: Muse
-#scheme: Mist
+# scheme: Mist
 #scheme: Pisces
 
 
@@ -231,8 +231,8 @@ social_icons:
 
 
 # Sidebar Avatar
-# in directory: /assets/images/avatar.gif
-#avatar:
+# in directory: /assets/images/avatar.jpg
+avatar: /assets/images/avatar.jpg
 
 
 # Table Of Contents in the Sidebar
@@ -532,7 +532,7 @@ calendar:
   orderBy: startTime
   offsetMax: 24
   offsetMin: 4
-  timeZone:
+  timeZone: Asia/Shanghai
   showDeleted: false
   singleEvents: true
   maxResults: 250

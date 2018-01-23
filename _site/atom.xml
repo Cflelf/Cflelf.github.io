@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.5.2">Jekyll</generator><link href="http://localhost:4000/atom.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-01-23T17:21:56+08:00</updated><id>http://localhost:4000/</id><title type="html">XiaorAx’s Blog</title><subtitle>每天进步一点</subtitle><author><name>XiaorAx</name></author><entry><title type="html">My first blog</title><link href="http://localhost:4000/2018/01/20/first-blog/" rel="alternate" type="text/html" title="My first blog" /><published>2018-01-20T23:00:00+08:00</published><updated>2018-01-20T23:00:00+08:00</updated><id>http://localhost:4000/2018/01/20/first-blog</id><content type="html" xml:base="http://localhost:4000/2018/01/20/first-blog/">&lt;h2 id=&quot;前言&quot;&gt;前言&lt;/h2&gt;
+
+&lt;p&gt;研究了好久的博客差不多弄好了，本来想自己搭一个的，后来发现了神奇的github.io,嘿嘿嘿&lt;/p&gt;
+
+&lt;h2 id=&quot;正文&quot;&gt;正文&lt;/h2&gt;
+
+&lt;p&gt;现在正值大三寒假，说实话有点迷茫，过去半年几乎都在研究swift，学校的课很多都没怎么听。马上下学期就要实习招聘了，有点紧张，不知道何去何从。听说大公司笔试看算法，需要多刷算法题，之前有刷过一段时间leetcode，看来要重新捡起了。不过我发现之前刷的很多效果不好，大多都已遗忘，我觉得应该要配合博客一起，把每道题的心得记录下来，这样效果应该更好，这就是我写博客的初衷。但是放假几天了，还没开始刷…天天沉迷塞尔达，我痛定思痛，决定开始刷题！！！&lt;/p&gt;</content><author><name>XiaorAx</name></author><category term="Life" /><summary type="html">前言</summary></entry></feed>
