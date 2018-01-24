@@ -5,6 +5,10 @@
 <lastmod>2018-01-20T23:00:00+08:00</lastmod>
 </url>
 <url>
+<loc>http://localhost:4000/2018/01/24/swift/</loc>
+<lastmod>2018-01-24T00:00:00+08:00</lastmod>
+</url>
+<url>
 <loc>http://localhost:4000/</loc>
 </url>
 <url>
@@ -24,9 +28,6 @@
 </url>
 <url>
 <loc>http://localhost:4000/about/</loc>
-</url>
-<url>
-<loc>http://localhost:4000/README.en/</loc>
 </url>
 <url>
 <loc>http://localhost:4000/assets/lib/fastclick/</loc>

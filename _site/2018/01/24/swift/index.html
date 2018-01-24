@@ -83,7 +83,7 @@
 <link href="/assets/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Jekyll, NexT" />
+  <meta name="keywords" content="swift," />
 
 
 
@@ -111,17 +111,17 @@
 
 
 
-<meta name="description" content="每天进步一点">
-<meta name="keywords" content="Jekyll, NexT">
-<meta property="og:type" content="website">
-<meta property="og:title" content="tags">
-<meta property="og:url" content="http://localhost:4000/tags/">
+<meta name="description" content="Given a string containing just the characters ‘(‘ and ‘)’, find the length of the longest valid (well-formed) parentheses substring.">
+<meta name="keywords" content="swift">
+<meta property="og:type" content="article">
+<meta property="og:title" content="吐槽swift">
+<meta property="og:url" content="http://localhost:4000/2018/01/24/swift/">
 <meta property="og:site_name" content="XiaorAx's Blog">
-<meta property="og:description" content="每天进步一点">
+<meta property="og:description" content="Given a string containing just the characters ‘(‘ and ‘)’, find the length of the longest valid (well-formed) parentheses substring.">
 <meta property="og:locale" content="zh-Hans">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="tags">
-<meta name="twitter:description" content="每天进步一点">
+<meta name="twitter:title" content="吐槽swift">
+<meta name="twitter:description" content="Given a string containing just the characters ‘(‘ and ‘)’, find the length of the longest valid (well-formed) parentheses substring.">
 
 
 <script type="text/javascript" id="hexo.configurations">
@@ -154,7 +154,7 @@
 
 
 
-  <title>tags</title>
+  <title>吐槽swift</title>
   
 
 
@@ -268,38 +268,187 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
+
 <div id="posts" class="posts-expand">
-<header class="post-header">
+  
+  
 
-	<h1 class="post-title" itemprop="name headline">tags</h1>
-
-
-
-</header>
+  
 
   
   
-    <div class="tag-cloud">
-      <div class="tag-cloud-title">
+  
+
+  <article class="post post-type- " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://localhost:4000/2018/01/24/swift/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="XiaorAx">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/assets/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="XiaorAx's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
           
-            目前共计 2 个标签
           
-      </div>
-      <div class="tag-cloud-tags">
-        
-        
-        
-        
-        
-        
+            吐槽swift
+          
+        </h1>
         
 
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-01-24T00:00:00+08:00">
+                2018-01-24
+              </time>
+            
 
+            
 
-        <a href="/tag/#/Life" style="font-size: 12.0px;color: rgb(204,204,204)">Life</a> <a href="/tag/#/swift" style="font-size: 12.0px;color: rgb(204,204,204)">swift</a>
-      </div>
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+            
+                <div class="post-description">
+                    
+                </div>
+            
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <blockquote>
+  <p>Given a string containing just the characters ‘(‘ and ‘)’, find the length of the longest valid (well-formed) parentheses substring.</p>
+</blockquote>
+
+<blockquote>
+  <p>For “(()”, the longest valid parentheses substring is “()”, which has length = 2.</p>
+</blockquote>
+
+<blockquote>
+  <p>Another example is “)()())”, where the longest valid parentheses substring is “()()”, which has length = 4.</p>
+</blockquote>
+
+<p>在刷leetcode这道题,本想用swift练练手,但是遇到了非常麻烦的地方,就是如果我要遍历一个字符串,swift提供的substring方法中需要用Index类型,如:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>let s = "abcdefg" 
+let start = s.index(s.startIndex, offsetBy: 1) // 获取第一个索引后一个的索引
+let end = s.index(start, offsetBy: 2) 
+let sub = s[start..&lt;end] //bc
+</code></pre>
+</div>
+
+<p>是不是用起来很麻烦,如果是java,直接substring(1,3)就行了.这样一想又想用java写了,毕竟leetcode很多地方都是要操纵string的,java在这方面优势巨大.</p>
+
+<p>而且swift还有很不适合刷leetcode的地方,你会记得那个方法里面的offsetBy吗？真是一款活在xcode里的语言,想到汤哥哥上课说的,大意是开源公司的代码不会给你很多限制,商业的会对你的编辑器限制很多.</p>
+
+<p>等我做完了在更新这一篇吧…</p>
+
+      
     </div>
-  
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            
+            <a href="/tag/#/swift" rel="tag"># swift</a>
+          
+        </div>
+      
+
+      
+      
+      
+      
+      
+
+      
+      
+        <div class="post-nav" id="post-nav-id">
+          <div class="post-nav-next post-nav-item">
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/01/20/first-blog/" rel="prev" title="My first blog">
+                My first blog <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+      
+
+      
+    </footer>
+  </article>
+
+  <div class="post-spread">
+    
+  </div>
 </div>
 
 
@@ -308,6 +457,10 @@
 
 
           
+  <div class="comments" id="comments">
+    
+  </div>
+
 
         </div>
         
@@ -323,6 +476,14 @@
 
   <aside id="sidebar" class="sidebar">
     <div class="sidebar-inner">
+
+      
+        
+        
+        
+
+
+
 
       
 

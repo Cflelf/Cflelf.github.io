@@ -1,4 +1,29 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.5.2">Jekyll</generator><link href="http://localhost:4000/atom.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-01-23T17:21:56+08:00</updated><id>http://localhost:4000/</id><title type="html">XiaorAx’s Blog</title><subtitle>每天进步一点</subtitle><author><name>XiaorAx</name></author><entry><title type="html">My first blog</title><link href="http://localhost:4000/2018/01/20/first-blog/" rel="alternate" type="text/html" title="My first blog" /><published>2018-01-20T23:00:00+08:00</published><updated>2018-01-20T23:00:00+08:00</updated><id>http://localhost:4000/2018/01/20/first-blog</id><content type="html" xml:base="http://localhost:4000/2018/01/20/first-blog/">&lt;h2 id=&quot;前言&quot;&gt;前言&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.5.2">Jekyll</generator><link href="http://localhost:4000/atom.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-01-24T20:41:00+08:00</updated><id>http://localhost:4000/</id><title type="html">XiaorAx’s Blog</title><subtitle>每天进步一点</subtitle><author><name>XiaorAx</name></author><entry><title type="html">吐槽swift</title><link href="http://localhost:4000/2018/01/24/swift/" rel="alternate" type="text/html" title="吐槽swift" /><published>2018-01-24T00:00:00+08:00</published><updated>2018-01-24T00:00:00+08:00</updated><id>http://localhost:4000/2018/01/24/swift</id><content type="html" xml:base="http://localhost:4000/2018/01/24/swift/">&lt;blockquote&gt;
+  &lt;p&gt;Given a string containing just the characters ‘(‘ and ‘)’, find the length of the longest valid (well-formed) parentheses substring.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;For “(()”, the longest valid parentheses substring is “()”, which has length = 2.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Another example is “)()())”, where the longest valid parentheses substring is “()()”, which has length = 4.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;在刷leetcode这道题,本想用swift练练手,但是遇到了非常麻烦的地方,就是如果我要遍历一个字符串,swift提供的substring方法中需要用Index类型,如:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;let s = &quot;abcdefg&quot; 
+let start = s.index(s.startIndex, offsetBy: 1) // 获取第一个索引后一个的索引
+let end = s.index(start, offsetBy: 2) 
+let sub = s[start..&amp;lt;end] //bc
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;是不是用起来很麻烦,如果是java,直接substring(1,3)就行了.这样一想又想用java写了,毕竟leetcode很多地方都是要操纵string的,java在这方面优势巨大.&lt;/p&gt;
+
+&lt;p&gt;而且swift还有很不适合刷leetcode的地方,你会记得那个方法里面的offsetBy吗？真是一款活在xcode里的语言,想到汤哥哥上课说的,大意是开源公司的代码不会给你很多限制,商业的会对你的编辑器限制很多.&lt;/p&gt;
+
+&lt;p&gt;等我做完了在更新这一篇吧…&lt;/p&gt;</content><author><name>XiaorAx</name></author><category term="swift" /><summary type="html">Given a string containing just the characters ‘(‘ and ‘)’, find the length of the longest valid (well-formed) parentheses substring.</summary></entry><entry><title type="html">My first blog</title><link href="http://localhost:4000/2018/01/20/first-blog/" rel="alternate" type="text/html" title="My first blog" /><published>2018-01-20T23:00:00+08:00</published><updated>2018-01-20T23:00:00+08:00</updated><id>http://localhost:4000/2018/01/20/first-blog</id><content type="html" xml:base="http://localhost:4000/2018/01/20/first-blog/">&lt;h2 id=&quot;前言&quot;&gt;前言&lt;/h2&gt;
 
 &lt;p&gt;研究了好久的博客差不多弄好了，本来想自己搭一个的，后来发现了神奇的github.io,嘿嘿嘿&lt;/p&gt;
 
