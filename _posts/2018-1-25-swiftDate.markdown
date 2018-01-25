@@ -23,5 +23,5 @@ tags:
 ![是不是很傻][1]
 
 
-  [1]: cflelf.github.io/assets/images/blogs/1.jpg
+  [1]: /assets/images/blogs/1.jpg
 要不我全改成中文算了。。
