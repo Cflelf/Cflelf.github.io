@@ -20,7 +20,9 @@ Runtime 系统会把方法调用转化为消息发送，即 objc_msgSend，并�
 
 ## ARC，MRC
 ARC：auto reference counting ，继承自NSObject的类
+
 MRC：手动release，retain
+
 auto release pool：放到自动释放池的对象是在超出自动释放池作用域后立即释放的。autorelease方法会把对象存储到AutoreleasePoolPage的链表里。等到auto release pool被释放的时候，把链表内存储的对象删除。
 
 ## Strong Weak unowned
@@ -55,8 +57,10 @@ Optional chaining 链式访问 例子if let isPNG = imagePaths[“star"]?.hasSuf
 逃逸闭包：一般用于异步函数的回调，比如网络请求成功的回调和失败的回调。语法：在函数的闭包行参前加关键字“@escaping”。
 
 逃逸闭包的2个场景：
-	异步调用: 如果需要调度队列中异步调用闭包， 这个队列会持有闭包的引用，至于什么时候调用闭包，或闭包什么时候运行结束都是不可预知的。
-	存储: 需要存储闭包作为属性，全局变量或其他类型做稍后使用。
+
+异步调用: 如果需要调度队列中异步调用闭包， 这个队列会持有闭包的引用，至于什么时候调用闭包，或闭包什么时候运行结束都是不可预知的。
+    
+存储: 需要存储闭包作为属性，全局变量或其他类型做稍后使用。
 
 ## Alamofire原理：对NSURLSession的封装
 几个核心文件
@@ -71,6 +75,7 @@ Response.swift
 
 ## NSURLSession
 三种类型
+
 Default默认：磁盘缓存，将证书存入钥匙串
 
 Ephemeral临时：存在RAM中
@@ -83,6 +88,7 @@ Background后台：使用单独的线程处理会话，其他与默认一致
 功能：URL编码，将get请求的参数拼接到url
 
 缓存策略
+
 1.使用NSMutableURLRequest指定缓存策略
 
 2. 使用NSURLSessionConfiguration指定缓存策略
