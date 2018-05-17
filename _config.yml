@@ -398,6 +398,12 @@ changyan:
   appid:
   appkey:
 
+gitment:
+  enable: true
+  ClientID: 0c586dfbc4fa5d6816eb
+  ClientSecret: 26dd28c1fa25e6eed7947da6b52ccf5fe784eaa7
+  lazy: true
+
 # Support for youyan comments system.
 # You can get your uid from http://www.uyan.cc
 #youyan_uid: your uid
