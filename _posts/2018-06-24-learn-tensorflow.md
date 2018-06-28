@@ -46,8 +46,11 @@ InteractiveSession可以将会话注册成默认会话
 ## 4.TensorFlow实现神经网络
 
 训练神经网络的步骤:
+
 (1)定义神经网络的结构和前向传播的输出结果
+
 (2)定义损失函数以及选择反向传播优化的算法
+
 (3)生成会话并且在训练数据上反复运行反向传播优化算法
 
 样例代码如下
@@ -105,3 +108,32 @@ InteractiveSession可以将会话注册成默认会话
         print(sess.run(w1))
         print(sess.run(w2))
 
+## 5.经典损失函数
+
+(1)cross entropy 交叉熵用于分类问题，刻画了两个概率分布之间的距离  H(p,q) = -sigma(p(x)log q(x))
+
+   SoftMax是一层额外的处理层，将神经网络的输出变成一个概率分布
+    
+    # y_代表正确结果，y代表预测结果
+    # clip_by_value函数将y的值限定在1e-10到1.0
+    cross_entropy = -tf.reduce_mean(y_ * tf.log(tf.clip_by_value(y, 1e-10, 1.0)))
+    # 一个命令直接得到使用SoftMax回归之后的交叉熵
+    cross_entropy = tf.nn.softmax_cross_entropy_with_logits(y,y_)
+    
+(2)MSE，mean squared error 均方误差用于回归问题
+
+     mse = tf.reduce_mean(tf.square(y_-y))
+     
+(3)自定义损失函数，为了使神经网络优化的结果更加接近实际
+
+## 6.梯度下降法
+
+目的是寻找一个参数a，使得损失函数J(a)的值最小。沿着切线方向下降可以达到局部最优解
+
+学习效率 learning rate：下降的速度，太快会导致无法收敛，太慢会导致下降轮次太多影响效率 一般设为0.001,0.003,0.01,0.03,0.1,0.3,1,3
+
+feature scaling: make sure features are on a similar scale
+
+## 7.Normal Equation
+
+线性模型的另一种回归方法，可以直接求出theta最优解，适用于features数量<10000量级，相比梯度下降法不需要设置learning rate，不需要feature scaling，但是求逆矩阵需要On3
